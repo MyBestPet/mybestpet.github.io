@@ -1,0 +1,158 @@
+/*Дизайн и вёрстка - BARRET.PRO © 2017*/
+/*Fonts*/
+
+@font-face {font-family:Uni_Sans_Heavy; src:url(http://agland.ru/style/tpl/fonts/Uni_Sans_Heavy.ttf)}
+@font-face {font-family:Uni_Sans_Thin; src:url(http://agland.ru/style/tpl/fonts/Uni_Sans_Thin.ttf)}
+@font-face {font-family:Uni_Sans_Heavy_Italic; src:url(http://agland.ru/style/tpl/fonts/Uni_Sans_Heavy_Italic.ttf)}
+@font-face {font-family:Uni_Sans_Thin_Italic; src:url(http://agland.ru/style/tpl/fonts/Uni_Sans_Thin_Italic.ttf)}
+
+/*Reset*/
+
+body {background: #1d1d1d url(http://agland.ru/style/tpl/img/header.jpg) 50% 0 no-repeat; color: #fff; font-family: Uni_Sans_Thin}
+* {box-sizing: border-box}
+a {color: #fff; text-decoration: none}
+h1,h2,h3,p {margin: 0 !important}
+button {outline: none; border: none; cursor: pointer}
+
+/*Inputs*/
+
+input {width: 80%; height: 40px; color: #54c211; border-top: 2px solid rgba(255,255,255,.07); border-bottom: 2px solid rgba(255,255,255,.07); border-right: 2px solid rgba(255,255,255,.07); border-left: none; background: transparent; font-family: Uni_Sans_Thin !important; outline: none; transition: ease-in 0.2s}
+input:focus {border-top: 2px solid #54c211; border-bottom: 2px solid #54c211; border-right: 2px solid #54c211; border-left: none; box-shadow: 0 0 10px rgba(84,194,17,.1)}
+.input-icon-focus {border-top: 2px solid #54c211 !important; border-bottom: 2px solid #54c211 !important; border-left: 2px solid #54c211 !important; color: #54c211 !important; box-shadow: 0 0 10px rgba(84,194,17,.1)}
+.select-icon-focus {border-top: 2px solid #54c211 !important; border-bottom: 2px solid #54c211 !important; border-left: 2px solid #54c211 !important}
+input:after {content: ''; display: block; clear: both}
+::-webkit-input-placeholder {color: rgba(255,255,255,.4)}
+::-moz-placeholder {color: rgba(255,255,255,.4)}
+:-moz-placeholder {color: rgba(255,255,255,.4)}
+:-ms-input-placeholder {color: rgba(255,255,255,.4)}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder {color: transparent}
+:focus:-moz-placeholder {color: transparent}
+:focus:-ms-input-placeholder {color: transparent}
+
+textarea {background: transparent; border: 2px solid rgba(255,255,255,.07); outline: none; max-width: 100%; display: block; min-width: 100%; margin-top: 10px !important; color: #54c211; padding: 10px; font-family: Uni_Sans_Thin !important; transition: ease-in 0.2s}
+textarea:focus {border: 2px solid #54c211}
+
+/*Scrollbars*/
+
+::-webkit-scrollbar {width: 4px}
+::-webkit-scrollbar-thumb {background-color: rgba(255,255,255,.2); border-radius: 10px; transition: ease-in 0.2s}
+::-webkit-scrollbar-thumb:hover {background-color: rgba(255,255,255,.28)}
+
+/*ScrollUpButton*/
+
+#toTop {display:none; cursor: pointer; position: fixed; bottom: 15px; right: 15px; width: 55px; height: 55px; border: 2px solid rgba(0,0,0,.2); background: #fff; color: #1d1d1d; font-size: 32px; font-weight: bold; line-height: 51px; text-align: center}
+
+/*Response*/
+.response {width: 100%; padding: 15px 15px; display: none; margin-top: 20px; color: #fff; font-family: Uni_Sans_Heavy; text-align: center}
+.response.fail {background: #a93c3c}
+.response.success {background: #54c211}
+
+/*Content*/
+
+article#content {width: 1100px; background: #30302f url(http://agland.ru/style/tpl/img/header-bg.jpg) -410px 0 no-repeat; margin: 0 auto}
+section:not(.section_menu) {margin-right: 103px; margin-left: 103px}
+.section_rules > div > h2:before,section > div > h2:after {content: ''; width: 270px; height: 1px; background: rgba(255,255,255,.07); vertical-align: middle; margin: 0 25px; display: inline-block}
+.section_rules > div > h2 {font-size: 24px; text-align: center; padding: 30px 0 30px 0}
+.section_rules .section_rules-content > p {width: 700px; margin: 0 auto !important; display: block}
+.section_menu .section_menu-nav {padding: 27px 20px; font-size: 18px}
+.section_menu .section_menu-nav > img {margin-right:  20px}
+.section_menu .section_menu-nav > a {padding: 5px 20px; border-radius: 3px; transition: ease-in 0.2s}
+.section_menu .section_menu-nav > a:hover {background: rgba(255,255,255,.15)}
+.section_menu .section_menu-nav .ip {float: right}
+.section_menu .section_menu-nav .ip > a {padding: 5px 20px; border-radius: 3px; background: #fff; color: rgba(0,0,0,.5); font-weight: bold}
+.section_menu:after {content: ''; display: block; clear: both}
+.section_title {text-align: center; margin-top:  50px}
+.section_title .section_title-name {font-family: Uni_Sans_Heavy; font-size: 72px}
+.section_title .section_title-name > p {font-family: Uni_Sans_Heavy_Italic; display: inline-block}
+.section_title .section_title-tagline {font-size: 30px}
+.section_stats {margin-top: 32px; text-align: center}
+.section_stats .section_stats-monitoring > div {border-radius: 100%; border: 3px solid rgba(255,255,255,.1); width: 95px; height: 95px; text-align: center; font-family: Uni_Sans_Heavy; line-height: 89px; font-size: 24px; display: inline-block; margin: 0 12px}
+.section_stats .section_stats-discription {margin-top:  10px}
+.section_stats .section_stats-discription > div {display: inline-block; width: 95px; vertical-align: top}
+.section_stats .section_stats-discription > div:not(:last-child) {margin-right: 12px}
+.section_stats .section_stats-discription > div:not(:first-child) {margin-left: 12px}
+.section_goods {text-align: center}
+.section_goods > div > h2, .section_buy > h2 {font-size: 24px; text-align: center}
+.section_goods > div > h2:before, .section_goods > div > h2:after, .section_buy > h2:before, .section_buy > h2:after  {content: ''; width: 270px; height: 1px; background: rgba(255,255,255,.07); vertical-align: middle; margin: 0 25px; display: inline-block}
+.section_goods > div > h3 {text-align: center; font-family: Uni_Sans_Heavy; color: rgba(255,255,255,.1)}
+.section_goods .section_goods-cat-1 {margin-top: 64px}
+.section_goods > div:not(:first-child) {margin-top: 36px}
+.section_goods > div > .block_goods {width: 280px; text-align: left; background: #569033; border: 3px solid rgba(0,0,0,.3); display: inline-block; margin: 101px 4px 0 4px; padding: 10px}
+.section_goods > div > .block_goods .block_goods-icon {width: 130px; height: 130px; position: relative; border-radius: 100%; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,.3); margin: -65px auto}
+.section_goods > div > .block_goods .block_goods-icon .discount {width: 50px; height: 50px; position: absolute; line-height: 50px; text-align: center; font-size: 14px; background: #ca4545; border-radius: 100%; right: 0; z-index: 2}
+.section_goods > div > .block_goods .block_goods-icon > img {border-radius: 100%; width: 130px; height: 130px; position: absolute; z-index: 1}
+.section_goods > div > .block_goods .block_goods-name {padding-top: 80px; font-family: Uni_Sans_Heavy; font-size: 18px; text-align: center}
+.section_goods > div > .block_goods .block_goods-name:after {content: ''; display: block; width: 25px; height: 1px; background: rgba(255,255,255,.1); margin: 10px auto}
+.section_goods > div > .block_goods .block_goods-discription {overflow: auto; height: 140px; width: 100%}
+.section_goods > div > .block_goods .block_goods-buy {margin-top: 10px}
+.price,.buy {height: 40px; text-align: center; line-height: 36px; font-size: 14px; font-family: Uni_Sans_Heavy; float: left; transition: ease-in 0.2s}
+.price {width: 60%; border: 2px solid #fff}
+.buy:hover {background: rgba(255,255,255,.8)}
+.section_goods > div > .block_goods .block_goods-buy > .buy {width: 40%; background: #fff; color: #569033}
+.section_buy {margin-top: 0px; text-align: center}
+.section_buy .section_buy-cats {box-shadow: 0 10px 30px rgba(0,0,0,.3); display: inline-block; vertical-align: top}
+.section_buy .section_buy-cats > div.active {background: url(http://agland.ru/style/tpl/img/triangle.png) 0 50% no-repeat,#54c211 url(http://agland.ru/style/tpl/img/buy-cat-bg.png); border-left: 2px solid #30302f}
+.section_buy .section_buy-cats > div {width: 300px; height: 55px; background: #54c211 url(http://agland.ru/style/tpl/img/buy-cat-bg.png); text-align: center; line-height: 49px; font-family: Uni_Sans_Heavy; font-size: 18px; border: 3px solid #4b941f; cursor: pointer}
+.section_buy .section_buy-cats > div:not(:last-child) {margin-bottom: 36px}
+.section_buy .section_buy-cats > div:not(:first-child) {margin-top: 36px}
+.section_buy .section_buy-forms {display: inline-block; vertical-align: top; text-align: left}
+.section_buy .section_buy-forms > form {width: 300px; background: rgba(255,255,255,.1); padding: 10px; display: none; vertical-align: top}
+.section_buy .section_buy-forms > form.active {display: block}
+.section_buy .section_buy-forms > form > div > i {width: 20%; text-align: center; height: 40px; line-height: 36px; color: rgba(255,255,255,.07); float: left; border-top: 2px solid rgba(255,255,255,.07); border-bottom: 2px solid rgba(255,255,255,.07); border-left: 2px solid rgba(255,255,255,.07)}
+.section_buy .section_buy-forms > form > div > i:not(.fa-shopping-basket) {transition: ease-in 0.2s}
+.section_buy .section_buy-forms > form > div:not(:first-child) {margin-top: 10px}
+.section_buy .section_buy-forms > form > .group_buy > .buy {width: 40%; background: #fff; color: #3c3c3c}
+.section_buy .section_buy-forms > form > .group_buy:after {content: ''; display: block; clear: both}
+.section_buy .section_buy-forms > form > .input_checkbox > p {display: inline-block; font-size: 14px; color: rgba(255,255,255,.4)}
+footer {background: #1d1d1d; padding: 10px 0; margin: 40px 0 0 0}
+footer > * {display: inline-block; vertical-align: middle}
+footer > img {opacity: .4; transition: ease-in 0.2s; cursor: pointer}
+footer > img:hover {opacity: 1}
+footer .banners-and-social {float: right}
+footer .banners-and-social > a {display: inline-block; vertical-align: top}
+footer .banners-and-social > a:not(:last-child) {margin: 0 3px}
+footer .banners-and-social .footer_link {width: 31px; height: 31px; line-height: 31px; text-align: center}
+footer .banners-and-social .footer_link.vk {background: #1b5d9a}
+footer .copy {color: rgba(255,255,255,.4)}
+footer .copy:before {content: ''; display: inline-block; vertical-align: middle; margin: 0 10px; width: 1px; height: 15px; background: rgba(255,255,255,.1)}
+footer:after {content: ''; display: block; clear: both}
+.arrows {position: absolute; top: 100px; margin-left: -80px}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #1d1d1d;
+    margin: auto;
+    padding-bottom: 20px;
+    border: 1px solid #888;
+    width: 450px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
